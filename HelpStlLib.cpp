@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include <vector>
 #include <list>
 #include <stack>
@@ -6,6 +7,8 @@
 #include <deque>
 #include <set>
 #include <map>
+
+#include <algorithm>
 
 using namespace std;
 
@@ -87,7 +90,14 @@ int main(){
 	map.clear();
 	
 	// Sort //
+	sort(vec.begin(), vec.end());
+	
 	list.sort();
+
+	// algorithm //
+	find(vec.begin(), vec.end(), 3);
+	min_element(vec.begin(), vec.end());
+	max_element(vec.begin(), vec.end());
 	
 	return 0;
 }
